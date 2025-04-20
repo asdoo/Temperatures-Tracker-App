@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperatures Tracker App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌡️ Temperature Tracker</h1>
+        
+        <select id="citySelect">
+            <option value="">Select City</option>
+            <option value="Elobour">Elobour City</option>
+            <option value="October">October City</option>
+        </select>
+
+        <input type="date" id="dateInput">
+        <button onclick="fetchWeather()">Get Data</button>
+
+        <div id="results">
+            <h2 id="cityName"></h2>
+            <p>Date: <span id="dateDisplay"></span></p>
+            <div class="temp-box">
+                <div>Min: <span id="minTemp"></span>°C</div>
+                <div>Max: <span id="maxTemp"></span>°C</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
